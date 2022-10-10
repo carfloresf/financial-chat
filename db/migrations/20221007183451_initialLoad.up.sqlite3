@@ -1,0 +1,7 @@
+CREATE TABLE "users" (
+                         "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+                         "username" string NOT NULL UNIQUE,
+                         "passwordHash" string NOT NULL,
+                         "created_at" timestamp,
+                         "updated_at" timestamp
+);

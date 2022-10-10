@@ -1,0 +1,45 @@
+{{template "header.html" .}}
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column"></div>
+      <div class="column is-one-third">
+      <h3 class="subtitle">Join a channel</h3>
+        <div class="field is-grouped">
+          <p class="control is-expanded">
+            <input class="input" id="channel" type="text" placeholder="Find a channel">
+          </p>
+          <p class="control">
+            <a class="button is-info" id="join">
+              Search
+            </a>
+          </p>
+        </div>
+        <hr class="solid">
+        <h3 class="subtitle">Popular channels</h3>
+        <a class="button is-info is-light" href="/channel/main">
+          main
+        </a>
+        <a class="button is-info is-light" href="/channel/go">
+          go
+        </a>
+        <a class="button is-info is-light" href="/channel/mechanicalkeyboards">
+          mechanicalkeyboards
+        </a>
+    </div>
+      <div class="column">
+      </div>
+    </div>
+    <script>
+      var chan = document.getElementById("channel");
+      var join = document.getElementById("join");
+
+      join.onclick = function () {
+        if (chan.value !== "") {
+          window.location = "/channel/" + chan.value;
+        }
+      };
+
+    </script>
+  </div>
+</section>

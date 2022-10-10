@@ -1,0 +1,36 @@
+linters:
+  presets:
+    - bugs
+    - complexity
+    - format
+    - performance
+    - unused
+    - style
+    - performance
+  disable:
+    - paralleltest
+    - godot
+    - gofumpt
+    - tagliatelle
+    - gci
+    - wrapcheck
+    - exhaustivestruct
+    - exhaustruct
+    - nolintlint
+linters-settings:
+  funlen:
+    lines: 120
+    statements: 100
+  staticcheck:
+    # Select the Go version to target. The default is '1.13'.
+    go: "1.19"
+    # https://staticcheck.io/docs/options#checks
+    checks: [ "all" ]
+  revive:
+    severity: error
+run:
+  timeout: 5m
+  tests: false
+  skip-dirs:
+    - vendor
+    - data

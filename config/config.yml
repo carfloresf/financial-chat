@@ -1,0 +1,13 @@
+http:
+  address: '0.0.0.0'
+  port: '8080'
+
+db:
+  db_file: 'db/file.db'
+
+auth:
+  pepper: 'your-secret-pepper'
+  cookie: 'your-secret-cookie'
+
+rabbitmq:
+  url: 'amqp://guest:guest@localhost:5672/'

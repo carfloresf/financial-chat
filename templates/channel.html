@@ -1,0 +1,82 @@
+{{template "header.html" .}}
+<section class="section">
+    <div class="container">
+        <style>
+            #chat {
+                text-align: left;
+                background: #f1f1f1;
+                margin-right: auto;
+                margin-left: auto;
+                min-height: 500px;
+                max-height: 500px;
+                border: 1px solid #ccc;
+                padding: 20px;
+                font-size: 16px;
+            }
+        </style>
+
+
+        <div class="columns">
+            <div class="column"></div>
+            <div class="column is-two-thirds">
+                <h1 class="title">
+                    Chat
+                </h1>
+                <h2 id="name" class="subtitle"></h2>
+                <pre id="chat"></pre>
+                <div class="field is-grouped">
+                    <p class="control is-expanded">
+                        <input class="input" id="text" type="text" placeholder="say something or write a command">
+                    </p>
+                    <p class="control">
+                        <a class="button is-info" id="send">
+                            send
+                        </a>
+                    </p>
+                </div>
+
+                <script>
+                    var url = "ws://" + window.location.host + window.location.pathname + "/ws";
+                    var ws = new WebSocket(url);
+                    var name = {{.user}};
+                    var channelName = window.location.pathname.split("/")[2];
+
+                    document.getElementById("name").innerText = "channel/" + channelName;
+
+                    var chat = document.getElementById("chat");
+                    var text = document.getElementById("text");
+
+                    var now = function () {
+                        var iso = new Date().toISOString();
+                        return iso.split("T")[1].split(".")[0];
+                    };
+
+                    ws.onmessage = function (msg) {
+                        var line =  now() + ": " + msg.data + "\n";
+                        chat.innerText += line;
+                    };
+
+                    text.onkeydown = function (event) {
+                        if (event.key === "Enter" && text.value !== "") {
+                            ws.send("<" + name + "> " + text.value);
+                            text.value = "";
+                        }
+                    };
+
+                    var send = document.getElementById("send");
+
+                    send.onclick = function () {
+                        if (text.value !== "") {
+                            ws.send("<" + name + "> " + text.value);
+                            text.value = "";
+                        }
+                    };
+
+                </script>
+            </div>
+            <div class="column"></div>
+        </div>
+
+        </div>
+
+</section>
