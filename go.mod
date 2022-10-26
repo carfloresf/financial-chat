@@ -12,7 +12,7 @@ require (
 	github.com/google/uuid v1.3.0
 	github.com/ilyakaznacheev/cleanenv v1.3.0
 	github.com/jarcoal/httpmock v1.2.0
-	github.com/mattn/go-sqlite3 v1.14.15
+	github.com/mattn/go-sqlite3 v1.14.16
 	github.com/olahol/melody v1.1.1
 	github.com/sirupsen/logrus v1.9.0
 	github.com/spf13/cast v1.5.0
