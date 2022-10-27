@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/DATA-DOG/go-sqlmock v1.5.0
-	github.com/gin-contrib/sessions v0.0.4
+	github.com/gin-contrib/sessions v0.0.5
 	github.com/gin-gonic/gin v1.8.1
 	github.com/gocarina/gocsv v0.0.0-20220927221512-ad3251f9fa25
 	github.com/golang-migrate/migrate/v4 v4.15.2
@@ -12,7 +12,7 @@ require (
 	github.com/google/uuid v1.3.0
 	github.com/ilyakaznacheev/cleanenv v1.3.0
 	github.com/jarcoal/httpmock v1.2.0
-	github.com/mattn/go-sqlite3 v1.14.16
+	github.com/mattn/go-sqlite3 v2.0.3+incompatible
 	github.com/olahol/melody v1.1.1
 	github.com/sirupsen/logrus v1.9.0
 	github.com/spf13/cast v1.5.0
