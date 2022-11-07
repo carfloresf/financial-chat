@@ -6,7 +6,7 @@ require (
 	github.com/DATA-DOG/go-sqlmock v1.5.0
 	github.com/gin-contrib/sessions v0.0.4
 	github.com/gin-gonic/gin v1.8.1
-	github.com/gocarina/gocsv v0.0.0-20220927221512-ad3251f9fa25
+	github.com/gocarina/gocsv v0.0.0-20221105105431-c8ef78125b99
 	github.com/golang-migrate/migrate/v4 v4.15.2
 	github.com/golang/mock v1.6.0
 	github.com/google/uuid v1.3.0
