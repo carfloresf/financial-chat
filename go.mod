@@ -13,7 +13,7 @@ require (
 	github.com/ilyakaznacheev/cleanenv v1.4.2
 	github.com/jarcoal/httpmock v1.2.0
 	github.com/mattn/go-sqlite3 v2.0.3+incompatible
-	github.com/olahol/melody v1.1.1
+	github.com/olahol/melody v1.1.3
 	github.com/sirupsen/logrus v1.9.0
 	github.com/spf13/cast v1.5.0
 	github.com/stretchr/testify v1.8.1
