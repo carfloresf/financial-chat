@@ -16,7 +16,7 @@ require (
 	github.com/olahol/melody v1.1.1
 	github.com/sirupsen/logrus v1.9.0
 	github.com/spf13/cast v1.5.0
-	github.com/stretchr/testify v1.8.1
+	github.com/stretchr/testify v1.8.2
 	github.com/wagslane/go-rabbitmq v0.11.1
 	golang.org/x/crypto v0.5.0
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2
