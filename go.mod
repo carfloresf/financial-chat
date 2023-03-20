@@ -17,7 +17,7 @@ require (
 	github.com/sirupsen/logrus v1.9.0
 	github.com/spf13/cast v1.5.0
 	github.com/stretchr/testify v1.8.1
-	github.com/wagslane/go-rabbitmq v0.11.1
+	github.com/wagslane/go-rabbitmq v0.12.3
 	golang.org/x/crypto v0.5.0
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2
 )
@@ -44,7 +44,7 @@ require (
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.6 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/rabbitmq/amqp091-go v1.5.0 // indirect
+	github.com/rabbitmq/amqp091-go v1.7.0 // indirect
 	github.com/ugorji/go/codec v1.2.7 // indirect
 	go.uber.org/atomic v1.10.0 // indirect
 	golang.org/x/net v0.5.0 // indirect
